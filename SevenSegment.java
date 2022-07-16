@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class SevenSegment {
     private static int[][] binaryArray = new int[5][4];
     public static void main(String[] args) {
-        sevenSegment("11011011");
+        sevenSegment("11011111");
         display();
     }
     public static void handleSegmentA(){
@@ -30,7 +30,7 @@ public class SevenSegment {
     public static void handleSegmentF(){
         binaryArray[0][0] = 1;
         binaryArray[1][0] = 1;
-        binaryArray[2][0] = 2;
+        binaryArray[2][0] = 1;
     }
     public static void handleSegmentG(){
         Arrays.fill(binaryArray[2], 1);
