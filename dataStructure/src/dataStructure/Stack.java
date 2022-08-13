@@ -38,7 +38,7 @@ public class Stack extends Vector{
     public int search(String element){
         for (int itemNumber = 0; itemNumber < stack.length; itemNumber--){
             if (Objects.equals(stack[itemNumber], element)){
-                return (itemNumber + 1);
+                return stack.length - itemNumber;
             }
         }
         return -1;
